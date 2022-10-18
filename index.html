@@ -146,11 +146,6 @@
 
                                     $.each(results, function (i, paper) {
 
-                                        var journalLink = paper.journallink ? "<a href=\""+ paper.journallink + "\"class=\"journalLink\" target=\"_blank\">Journal Link</a>\n": "";
-                                        var seperator1 = paper.journallink ? ", " : "";
-                                        var seperator2 = paper.journal ? ", " : "";
-                                        var citation = paper.citation? "<button type=\"button\" class=\"btn btn-link social-icons\" data-toggle=\"modal\" title=\"Cite Me!\" data-target=\"#cite" + i + "\"><i class=\"fas fa-quote-right\"></i></button>\n" :"";
-
                                         document.write("<div class=\"divTableRow\">\n" +
                                             "                            <div class=\"paperTitle\">\n" +
                                             "                                <a target=\"_blank\"\n" +
@@ -221,10 +216,8 @@
 
                             $.each(results, function (i, paper) {
 
-                                var journalLink = paper.journallink ? "<a href=\""+ paper.journallink + "\"class=\"journalLink\" target=\"_blank\">Journal Link</a>\n": "";
                                 var seperator1 = paper.journallink ? ", " : "";
                                 var seperator2 = paper.journal ? ", " : "";
-                                var citation = paper.citation? "<button type=\"button\" class=\"btn btn-link social-icons\" data-toggle=\"modal\" title=\"Cite Me!\" data-target=\"#cite" + i + "\"><i class=\"fas fa-quote-right\"></i></button>\n" :"";
 
                                 document.write("<div class=\"divTableRow\">\n" +
                                     "                            <div class=\"paperTitle\">\n" +
@@ -232,7 +225,7 @@
                                     "                                   href=\"" + paper.link + "\">\n" +
                                     paper.papertitle  +
                                     "                                </a>\n" + seperator2 +
-                                    "  <span class=\"journalTitle\">"+ paper.journal + seperator1 + journalLink +
+                                    "  <span class=\"journalTitle\">"+ paper.journal + seperator1 +
                                     "                                </span>" +
                                     "                          </div>\n" +
                                     "                            <div class=\"authors\">" + paper.authors +
