@@ -618,6 +618,54 @@ a:focus {
 }
 
 
+.paperTitle a {
+    font-size: 1.2em;
+
+}
+
+.journalLink{
+    font-size: 1.0em!important;
+    color:#697dac!important;
+}
+
+.paperTitle {
+
+    padding-bottom: 10px;
+}
+
+.author {
+    font-weight: 600;
+}
+
+.year {
+    font-size: .8em;
+    color: #8E8E8E;
+}
+
+.authors {
+    font-size: .9em;
+    color: #666;
+}
+
+.divTableRow {
+    padding-bottom: 20px;
+    display: block;
+    margin-left: 20px;
+}
+
+.divTableRow .paperTitle::before {
+    content: '\25b6';
+    margin-left: -22px;
+    padding-left: -20px;
+    padding-right: 10px;
+}
+
+.divTableRow .paperTitle a {
+    color: #697dac;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 /*******************************/
 /********* Banner CSS **********/
 /*******************************/
