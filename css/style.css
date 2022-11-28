@@ -422,7 +422,7 @@ a:focus {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .team-social a.btn {
